@@ -1,0 +1,9 @@
+plugins {
+    id "kotlin"
+}
+
+dependencies {
+    implementation libs.kotlinStdlib
+
+    testImplementation(tests.bundles.domain)
+}

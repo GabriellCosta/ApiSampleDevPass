@@ -1,0 +1,3 @@
+package dev.tigrao.devpass.domain.data
+
+internal interface FetchSearchMovieListRepository

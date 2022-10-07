@@ -1,0 +1,15 @@
+plugins {
+    id "kotlin"
+}
+
+dependencies {
+    implementation libs.kotlinStdlib
+
+    implementation libs.koin.core
+    api(libs.coroutines.core)
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    api(projects.infra.states)
+
+    testImplementation(tests.bundles.domain)
+}

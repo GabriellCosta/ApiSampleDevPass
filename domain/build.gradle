@@ -1,0 +1,20 @@
+plugins {
+    id "kotlin"
+    id "kotlin-kapt"
+}
+
+dependencies {
+    implementation libs.kotlinStdlib
+
+    implementation(projects.infra.api)
+    implementation(projects.infra.network.public)
+    implementation libs.retrofit
+    implementation(libs.moshi.core)
+    kapt(libs.moshi.codegen)
+    implementation libs.okhttp
+    implementation libs.okhttpLogger
+    implementation libs.koin.core
+
+    testImplementation(tests.bundles.domain)
+
+}

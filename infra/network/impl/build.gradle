@@ -1,0 +1,17 @@
+plugins {
+    id "kotlin"
+}
+
+dependencies {
+    implementation libs.kotlinStdlib
+
+    implementation(projects.infra.network.public)
+    implementation libs.retrofit
+    implementation libs.retrofitGsonConverter
+    implementation(libs.moshi.retrofit)
+    implementation(libs.moshi.core)
+    implementation libs.okhttp
+    implementation libs.okhttpLogger
+    implementation libs.koin.core
+
+}
